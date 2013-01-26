@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Terminator.EatObject" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAUAQAAGAEAAAgAAAAAAAAAAAAAAABgAAAAYAA=</HashCode>
+      <FileName>EatObjects.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.EatObjectsCreater" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAA=</HashCode>
+      <FileName>EatObjectsCreater.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.Enemi" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAWAAAAEgAAAAgQAAAAAAgAgAAIGIQRAB4BhAACD4AI=</HashCode>
+      <FileName>Enemi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.EnemiConfig" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>EnemiConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.EnemiCreater" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EnemiCreater.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.EnemiImg" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkgAgCDCAABg6iAAAAgAAAAAAAAAAAQAAgAEAAIJAAA=</HashCode>
+      <FileName>EnemiImg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.Finish" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARgAAAAYAA=</HashCode>
+      <FileName>Finish.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.Floor" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAABgAAAAYAA=</HashCode>
+      <FileName>Floor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.Level" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAggABAIIAAAAAAAACIABAICACACAAAg=</HashCode>
+      <FileName>Level.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.MainForm" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACCAACAAAAAAAACAAAAiAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.Model" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAHEAAAAAggAIAJICCBAQAEAAICAgICgCAABAAg=</HashCode>
+      <FileName>Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.Program" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.Target" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAABAAIAAQACAYAAEAGAAgQAAAIGEAAA=</HashCode>
+      <FileName>Target.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.Termin" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAOABQBgEAEAYgQAAARAAQEkUAABIEQAAMBkAEJj4AY=</HashCode>
+      <FileName>Termin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.TerminImg" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkAAACDCAAAgigAAAAgAAAAAAAAAAAQAAgAEAAIAAAA=</HashCode>
+      <FileName>TerminImg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.View" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAigAEAgBDJYIAABAgCAYQACAI0AAAAIgAAAAAEIgAA=</HashCode>
+      <FileName>View.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.Wall" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAADAAAAA4ABAACAAQAAAAAAAAA=</HashCode>
+      <FileName>Wall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.WallCreater" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAIAAAACAAAA=</HashCode>
+      <FileName>WallCreater.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.Properties.Resources" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAACQABAAgAAgAACIJECCAQQEIEASAAAAAABBFRKA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminator.Properties.Settings" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Terminator.EatObjectStatus" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAACAAAAAAAgAAAAAAAABAAA=</HashCode>
+      <FileName>EatObjectStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Terminator.GameStatus" Collapsed="true">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAhAAAAA=</HashCode>
+      <FileName>GameStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Terminator.EnemiStatus" Collapsed="true">
+    <Position X="4.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

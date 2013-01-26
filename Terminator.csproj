@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{58843CEF-B05A-430C-896F-963D918DA74B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Terminator</RootNamespace>
+    <AssemblyName>Terminator</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Resources\Terminator.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>378DADB7BFA85FEB29BAB70414D1D351FC148B00</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Terminator_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>ProdKey.pfx</AssemblyOriginatorKeyFile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="Crosser.cs" />
+    <Compile Include="EatObjects.cs" />
+    <Compile Include="EatObjectsCreater.cs" />
+    <Compile Include="EatObjectStatus.cs" />
+    <Compile Include="Enemi.cs" />
+    <Compile Include="EnemiCreater.cs" />
+    <Compile Include="EnemiConfig.cs" />
+    <Compile Include="EnemiImg.cs" />
+    <Compile Include="Finish.cs" />
+    <Compile Include="Floor.cs" />
+    <Compile Include="GameStatus.cs" />
+    <Compile Include="Level.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs" />
+    <Compile Include="EnemiStatus.cs" />
+    <Compile Include="View.cs">
+    </Compile>
+    <Compile Include="Plane.cs" />
+    <Compile Include="PlaneImage.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controller.resx">
+      <DependentUpon>Controller.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Target.cs" />
+    <Compile Include="Termin.cs" />
+    <Compile Include="TerminImg.cs" />
+    <Compile Include="Menu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controller.Designer.cs">
+      <DependentUpon>Controller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wall.cs" />
+    <Compile Include="WallCreater.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeathEnemi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desktop.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermDown0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermDown1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermDown2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermDownLeft0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermDownLeft1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermDownLeft2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermDownRight0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermDownRight1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermDownRight2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermLeft0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermLeft1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermLeft2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermRight0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermRight1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermRight2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermUp0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermUp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermUp2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermUpLeft0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermUpLeft1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermUpLeft2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermUpRight0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermUpRight1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TermUpRight2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OvalDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OvalDownLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OvalDownRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OvalLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OvalRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OvalUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OvalUpLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OvalUpRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankDownLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankDownRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankUpLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankUpRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Life.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Terminator.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoodWeppon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Weppon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorV.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorI.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorII.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorIII.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorIV.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotoDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotoDownLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotoDownRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotoLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotoRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotoUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotoUpLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotoUpRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PixotLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PixotRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PixotUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PixotUpLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PixotUpRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PixotDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PixotDownLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PixotDownRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BugDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BugDownLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BugDownRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BugLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BugRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BugUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BugUpLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BugUpRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlaneDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlaneDownLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlaneDownRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlaneLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlaneRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlaneUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlaneUpLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlaneUpRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Win.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Winner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OnPlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu1Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu1On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu2Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu2On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu3Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu3On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu4Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu4On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu5Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu5On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Description.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirPlane1_Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirPlane1_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirPlane1_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirPlane1_Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirPlane2_Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirPlane2_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirPlane2_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ProdKey.pfx" />
+    <None Include="Resources\AirPlane2_Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirPlane3_Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirPlane3_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirPlane3_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirPlane3_Up.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
